@@ -1,0 +1,592 @@
+@import "../../Colors.scss";
+
+
+/* Super Extra small devices (phones, 350px and down) */
+@media only screen and (max-width: 350px) {
+    #home{
+        width: 100%;
+        margin: auto;
+        padding: 0px 20px;
+        box-sizing: border-box;
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        & .content{
+            font-family: "Chakra Petch", system-ui;
+            & .name{
+                font-size: 15vw;
+                font-weight: bold;
+                line-height: 1em;
+                margin: 0px;
+                padding: 0px;
+                margin-top: 50px;
+                text-align: center;
+                & span{
+                    height: 60px;
+                    display: block;
+                }
+            }
+            & .job{
+                margin: 0px;
+                padding: 0px;
+                font-size: 7vw;
+                & span{
+                    //background-image: linear-gradient(to right, $azul-100, $azul-300,$azul-600, $azul-900, $azul-600, $azul-300, $azul-100);
+                    background-image: linear-gradient(to right, $azul, $purpura, $rosa, $rojo, $naranja, $amarillo, $verde, $verde-azulado, $cian, $azul-500);
+                    background-size: 200% auto;
+                    -webkit-text-fill-color: transparent;
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    animation: shine 5s linear infinite;
+                    font-weight: bolder;
+                    
+                }
+            }
+            & .description{
+                margin-top: 10px;
+               margin-bottom: 55px; 
+               font-size: 5vw;
+            }
+    
+            & a:hover{
+                background-color: $azul-600;
+                color: white;
+                border-top: 4px solid white;
+                border-bottom: 4px solid white;
+            }
+        }
+        & .avatar{
+            margin-left: 20px;
+            display: flex;
+            justify-content: flex-end;
+
+            & img{
+                mask-image: linear-gradient(black 80%, transparent);
+                filter: drop-shadow(0 0 5px white);
+                transition: all 0.3s;            
+                width: 50vw;
+                height: auto;
+            }
+    
+            & img:hover{
+                filter: drop-shadow(0 0 20px white);
+            }
+        }
+    }
+
+    #home > div > a{
+        font-size: 4vw;
+        text-align: center;
+        display: block;
+        height: auto;
+        width: 150px;
+        padding: 15px 25px 15px 40px;
+        background-color: $blanco;
+        color: $azul-400;
+        font-weight: bold;
+        border-top: 5px solid $azul-600;
+        border-bottom: 4px solid $azul-600;
+        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+        opacity: 100%;
+        border-right: none;
+        text-decoration: none;
+    }
+}
+
+/* Extra small devices (phones, 350px and down) */
+@media only screen and (min-width: 350px) {
+    #home{
+        width: 100%;
+        margin: auto;
+        padding: 0px 20px;
+        box-sizing: border-box;
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        & .content{
+            font-family: "Chakra Petch", system-ui;
+            & .name{
+                font-size: 15vw;
+                font-weight: bold;
+                line-height: 1em;
+                margin: 0px;
+                padding: 0px;
+                margin-top: 50px;
+                text-align: center;
+                & span{
+                    height: 100px;
+                    display: block;
+                }
+            }
+            & .job{
+                margin: 0px;
+                padding: 0px;
+                font-size: 7vw;
+                & span{
+                    //background-image: linear-gradient(to right, $azul-100, $azul-300,$azul-600, $azul-900, $azul-600, $azul-300, $azul-100);
+                    background-image: linear-gradient(to right, $azul, $purpura, $rosa, $rojo, $naranja, $amarillo, $verde, $verde-azulado, $cian, $azul-500);
+                    background-size: 200% auto;
+                    -webkit-text-fill-color: transparent;
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    animation: shine 5s linear infinite;
+                    font-weight: bolder;
+                    
+                }
+            }
+            & .description{
+                margin-top: 10px;
+               margin-bottom: 55px; 
+               font-size: 5vw;
+            }
+    
+            & a:hover{
+                background-color: $azul-600;
+                color: white;
+                border-top: 4px solid white;
+                border-bottom: 4px solid white;
+            }
+        }
+        & .avatar{
+            margin-left: 20px;
+            display: flex;
+            justify-content: flex-end;
+
+            & img{
+                mask-image: linear-gradient(black 80%, transparent);
+                filter: drop-shadow(0 0 5px white);
+                transition: all 0.3s;            
+                width: 50vw;
+                height: auto;
+            }
+    
+            & img:hover{
+                filter: drop-shadow(0 0 20px white);
+            }
+        }
+    }
+
+    #home > div > a{
+
+        text-align: center;
+        display: block;
+        height: auto;
+        width: 200px;
+        padding: 15px 25px 15px 40px;
+        background-color: $blanco;
+        color: $azul-400;
+        font-weight: bold;
+        border-top: 5px solid $azul-600;
+        border-bottom: 4px solid $azul-600;
+        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+        opacity: 100%;
+        border-right: none;
+        text-decoration: none;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #home{
+        width: 100%;
+        margin: auto;
+        padding: 0px 60px;
+        box-sizing: border-box;
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        & .content{
+            font-family: "Chakra Petch", system-ui;
+            & .name{
+                font-size: 4em;
+                font-weight: bold;
+                line-height: 1em;
+                margin: 0px;
+                padding: 0px;
+                margin-top: 50px;
+                text-align: center;
+                & span{
+                    height: 100px;
+                    display: block;
+                }
+            }
+            & .job{
+                margin: 0px;
+                padding: 0px;
+                font-size: 2em;
+                & span{
+                    //background-image: linear-gradient(to right, $azul-100, $azul-300,$azul-600, $azul-900, $azul-600, $azul-300, $azul-100);
+                    background-image: linear-gradient(to right, $azul, $purpura, $rosa, $rojo, $naranja, $amarillo, $verde, $verde-azulado, $cian, $azul-500);
+                    background-size: 200% auto;
+                    -webkit-text-fill-color: transparent;
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    animation: shine 5s linear infinite;
+                    font-weight: bolder;
+                    
+                }
+            }
+            & .description{
+                font-size: 1em;
+                margin-top: 10px;
+               margin-bottom: 55px; 
+            }
+    
+            & a:hover{
+                background-color: $azul-600;
+                color: white;
+                border-top: 4px solid white;
+                border-bottom: 4px solid white;
+            }
+        }
+        & .avatar{
+            margin-left: 20px;
+            display: flex;
+            justify-content: flex-end;
+
+            & img{
+                mask-image: linear-gradient(black 80%, transparent);
+                filter: drop-shadow(0 0 5px white);
+                transition: all 0.3s;            
+                width: 50vw;
+                height: auto;
+            }
+    
+            & img:hover{
+                filter: drop-shadow(0 0 20px white);
+            }
+        }
+    }
+
+    #home > div > a{
+
+        text-align: center;
+        display: block;
+        height: auto;
+        width: 200px;
+        padding: 15px 25px 15px 40px;
+        background-color: $blanco;
+        color: $azul-400;
+        font-weight: bold;
+        border-top: 5px solid $azul-600;
+        border-bottom: 4px solid $azul-600;
+        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+        opacity: 100%;
+        border-right: none;
+        text-decoration: none;
+        
+    }
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #home{
+        & .content{
+            & .name{
+                font-size: 5em;
+                & span{
+                    height: 130px;
+
+                }
+            }      
+
+            & .description{
+                margin-top: 15px;
+               margin-bottom: 55px; 
+            }
+        }
+        & .avatar{
+            & img{         
+                width: 40vw;
+                height: auto;
+            }
+        }
+    }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #home{
+        padding: 60px;
+        padding-top: 100px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0px;
+        justify-content: space-between;
+        & .content{
+            & .name{
+                font-size: 3.5em;
+                text-align: start;
+                & span{
+                    height: 50px;
+                    min-width: 400px;
+                    display: block;
+                 
+                }
+            }
+            & .job{
+                margin-top: 50px;
+                font-size: 2em;
+            }
+            & .description{
+               margin-bottom: 55px; 
+            }
+        }
+        & .avatar{
+            margin-top: -50px;
+            display: flex;
+            justify-content: flex-end;
+            & img{
+                width: 35vw;
+            }
+        }
+    }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1300px) {
+    #home{
+        justify-items: end;
+        padding: 60px 100px;
+        & .content{
+            & .name{
+                font-size: 5em;
+                & span{
+                    height: 100px;
+                    display: block;
+                }
+            }
+            & .job{
+                margin-top: 50px;
+                font-size: 2em;
+            }
+            & .description{
+               margin-bottom: 55px; 
+            }
+        }
+        & .avatar{
+            & img{
+                width: auto;
+            }
+        }
+    }
+}
+
+/* Super Extra large devices (large laptops and desktops, 200px and up) */
+@media only screen and (min-width: 1800px) {
+    #home{
+        justify-items: center;
+        padding: 80px 150px;
+        & .content{
+            & .name{
+                font-size: 5em;
+                & span{
+                    height: 100px;
+                    display: block;
+                }
+            }
+            & .job{
+                margin-top: 50px;
+                font-size: 2em;
+            }
+            & .description{
+               margin-bottom: 55px; 
+            }
+        }
+        & .avatar{
+            & img{
+                width: auto;
+            }
+        }
+    }
+}
+
+
+/*
+#home{
+    width: 100%;
+    margin: auto;
+    padding: 60px;
+    box-sizing: border-box;
+    padding-top: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+    & .content{
+        font-family: "Chakra Petch", system-ui;
+        & .name{
+            font-size: 5em;
+            font-weight: bold;
+            line-height: 1em;
+            margin: 0px;
+            padding: 0px;
+            & span{
+                height: 100px;
+                display: block;
+            }
+        }
+        & .job{
+            margin: 0px;
+            padding: 0px;
+            margin-top: 50px;
+            
+            font-size: 2em;
+            & span{
+                //background-image: linear-gradient(to right, $azul-100, $azul-300,$azul-600, $azul-900, $azul-600, $azul-300, $azul-100);
+                background-image: linear-gradient(to right, $azul, $purpura, $rosa, $rojo, $naranja, $amarillo, $verde, $verde-azulado, $cian, $azul-500);
+                background-size: 200% auto;
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                background-clip: text;
+                animation: shine 5s linear infinite;
+                font-weight: bolder;
+                
+            }
+        }
+        & .description{
+           margin-bottom: 55px; 
+        }
+
+        & a:hover{
+            background-color: $azul-600;
+            color: white;
+            border-top: 4px solid white;
+            border-bottom: 4px solid white;
+        }
+    }
+    & .avatar{
+        margin-top: -50px;
+        display: flex;
+        justify-content: flex-end;
+        & img{
+            mask-image: linear-gradient(black 80%, transparent);
+            filter: drop-shadow(0 0 5px white);
+            transition: all 0.3s;
+        }
+
+        & img:hover{
+            filter: drop-shadow(0 0 20px white);
+        }
+    }
+}
+        #home > div > a{
+            text-align: center;
+            display: block;
+            height: auto;
+            width: 200px;
+            padding: 15px 25px 15px 40px;
+            background-color: $blanco;
+            color: $azul-400;
+            font-weight: bold;
+            border-top: 5px solid $azul-600;
+            border-bottom: 4px solid $azul-600;
+            clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+            opacity: 100%;
+            border-right: none;
+            text-decoration: none;
+            
+        }
+
+*/
+
+/* animation */
+.animation{
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    transition: 0.5s;
+}
+.animation.active{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
+}          
+  
+
+
+// Tipografias de google fonts
+
+.textFont1 {
+    font-family: "Zilla Slab" !important;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.textFont2 {
+    font-family: "Ga Maamli" !important;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.textFont3 {
+    font-family: "Shadows Into Light" !important;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.textFont4 {
+    font-family: "Permanent Marker" !important;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.textFont5 {
+    font-family: "Modern Antiqua" !important;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.textFont6 {
+    font-family: "Anton SC" !important;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.textFont7 {
+    font-family: "Indie Flower" !important;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.textFont8 {
+    font-family: "Oleo Script" !important;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.textFont9 {
+    font-family: "Rowdies" !important;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.textFont10 {
+    font-family: "Satisfy" !important;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+  

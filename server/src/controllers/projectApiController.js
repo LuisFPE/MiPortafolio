@@ -18,6 +18,7 @@ const getByProperty=async(req,res)=>{
 }
 
 const create = async(req,res)=>{
+    console.log("informacion obtenida al crear: ", req.body)
     const project = await projectController.create(req.body);
     res.json({data:project})
 }

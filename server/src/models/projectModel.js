@@ -17,8 +17,8 @@ const projectSchema  = new mongoose.Schema({
     },
     type : {
         type:String,
-        enum : ["individual","grupal"],
-        default: "individual"
+        enum : ["Individual","Grupal"],
+        default: "Individual"
     },
     publish:{
         type: String,
@@ -28,6 +28,7 @@ const projectSchema  = new mongoose.Schema({
         type: String,
         required: true
     },
+
 })
 
 const projectModel = mongoose.model("projects",projectSchema);
