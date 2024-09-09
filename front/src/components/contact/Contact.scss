@@ -37,11 +37,12 @@
 #contact > section > div:hover{
     background-color: rgba(255, 255, 255, 0.5);
     color: $negro;
+    transition: all 1s; 
 
     & img{
         opacity: 100%;
-        height: 48px;
-        width: 48px;
+        height: 64px;
+        width: 64px;
     }
     
     & button, a{
@@ -62,6 +63,7 @@
     height: 32px;
     width: 32px;
     opacity: 30%;
+    transition: all 1s; 
 }
 
 #contact > section > div > h3{
@@ -80,6 +82,7 @@
     padding: 2px 20px;
     font-weight: bold;
     opacity: 10%;
+    transition: all 2s; 
 }
 
 #contact > section > div > a{

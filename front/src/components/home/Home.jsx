@@ -28,7 +28,11 @@ const Home = () => {
                 {/* El cambio de fuente solo se bien de 1250px en adelante */}
                 <h1 className="name"><span className={textFont}>Luis Padua</span></h1>
                 <h2 className="job">Programador <span>FrontEnd Jr</span></h2>
-                <p className="description"> Soy una persona dinámica, proactiva, eficiente, muy persistente en mis objetivos, trabajo bien en equipo y afronto las situaciones con un enfoque positivo.</p>
+                <p className="description"> 
+
+                    Programador Web con una sólida formación en HTML, CSS, JavaScript y en el desarrollo de sitios web modernos, apasionado por la creación de interfaces de usuario atractivas y funcionales, con capacidad para crear sitios web "Responsive", conocimientos de frameworks como React y Boostrap, experiencia en git y en la colaboración en equipos de desarrollo. Poseo conocimientos de backend como Docker, Node Js, Express Js y Mongo DB para la creación de base de datos con JavaScript. Soy una persona proactiva, eficiente, me gustan los desafíos, adaptable y con muchas ganas de seguir aprendiendo.
+                    
+                </p>
                 <a href={curriculum} target="blank" >Descarga mi Curriculum ⇓</a>
             </div>
             <div className="avatar">
